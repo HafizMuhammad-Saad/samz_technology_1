@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
     <style>
         /* body {
@@ -68,23 +70,86 @@
         } */
     </style>
 </head>
+
 <body>
-    <h1>Welcome to My Creative Space</h1>
-    <h2>About Me</h2>
-    <p>Hello! I'm an innovative web developer with a passion for crafting unique, modern, and visually appealing digital experiences.</p>
+    <header>
+      <nav class="desktop">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <nav class="mobile">
+        <input type="checkbox" id="sidebar">
+        <label for="sidebar" class="sidebar-button">
+          <div class="line top"></div>
+          <div class="line mid"></div>
+          <div class="line bottom"></div>
+        </label>
+        <div class="links-container">
+          <a href="home">Home</a>
+          <a href="#about">About</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
     
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Web Development & Design</li>
-        <li>Exploring AI & Tech Trends</li>
-        <li>UI/UX Experimentation</li>
-        <li>Photography & Digital Art</li>
-        <li>Gaming & Immersive Experiences</li>
-    </ul>
-    
-    <img src="pngwing.com.png" alt="Profile Picture">
-    
-    <br>
-    <a href="https://hafizmuhammad-saad.github.io/samz_technology_1/" target="_blank">Explore In GitHub</a>
-</body>
+    <main>
+      <section id="home">
+        <h1>Welcome to My Creative Space</h1>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm an innovative web developer with a passion for crafting unique, modern, and visually appealing digital experiences.</p>
+      </section>
+      <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>Web Development &amp; Design</li>
+          <li>Exploring AI &amp; Tech Trends</li>
+          <li>UI/UX Experimentation</li>
+          <li>Photography &amp; Digital Art</li>
+          <li>Gaming &amp; Immersive Experiences</li>
+        </ul>
+        <img src="pngwing.com.png" alt="Profile Picture">
+        <br>
+        <a href="https://hafizmuhammad-saad.github.io/samz_technology_1/" target="_blank">Explore In GitHub</a>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+          <a href="mailto:studentsaad41@gmail.com" class="footer__link">hello@saad.dev</a>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://codepen.io">
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="http://dribbble.com">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/hafizmuhammad-saad">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copy">&copy; 2025 My Creative Space. All rights reserved.</p>
+      </footer>
+      
+  </body>
+
 </html>
